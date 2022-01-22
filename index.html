@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1 class="titulo">Código secreto</h1>
+  <main class="main">
+    <section class="form box">
+      <form action=''>
+        <label for="input-texto">Solo letras minúsculas, sin acento</label>
+        <input class="text-input" type="text" name="input-texto" id="input-texto" pattern="^[ a-z]+$" placeholder="Ingrese el texto aqui" > 
+        <input class="btn" type="button" value="Encriptar!"  id="btn-encriptar" onclick="verificar(this)">
+        <input class="btn" type="button" value="Desencriptar!" id="btn-desencriptar" onclick="verificar(this)">
+      </form>
+    </section>
+
+    <section class="msg box">
+      <form name="mensaje">
+        <label>Mensaje Encriptado</label>
+        <input class="msg-input" type="text" name="msg" value ="" id="msg"></input>
+        <input class="btn" type="button" value="Copiar" id="btn-copy" onclick="copiar(this)">
+      </form>
+     </section>
+  </main>
+
+  <footer>
+    <p>Autor: Alberto Aquino</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
